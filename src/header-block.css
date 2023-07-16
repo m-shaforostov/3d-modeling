@@ -1,0 +1,38 @@
+p {
+    margin: 0;
+}
+
+.header-block-wrapper {}
+
+.header {
+    height: 50px;
+    flex-shrink: 0;
+    /*background-color: green;*/
+}
+
+.header-logo {}
+
+.header-buttons {
+}
+
+.header-phone-number {}
+
+.header-content {}
+
+.header-image {}
+
+.header-text {}
+
+.header-main-text {}
+
+.header-additional-text {}
+
+ul {}
+
+li {}
+
+.header-try-button {}
+
+.button-shadow {}
+
+.button {}
