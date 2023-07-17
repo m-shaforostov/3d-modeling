@@ -12,7 +12,9 @@ p {
 
 .header-logo {}
 
-.header-buttons {
+.header-button, .menu-icon {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 .header-phone-number {}

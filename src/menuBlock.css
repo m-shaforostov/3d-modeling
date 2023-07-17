@@ -3,3 +3,7 @@
     background: #303030 url("./images/Noise.png") repeat;
 }
 
+.menu-item, .cross-icon {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}

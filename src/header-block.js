@@ -3,27 +3,30 @@ import headerLogo from './images/3d.png'
 import headerNet from './images/net.png'
 import menuIcon from './images/menu.svg'
 import MenuBlock from "./menuBlock";
+import {useState} from "react";
 
 function HeaderBlock() {
+    const [menuIsActive, setMenuIsActive] = useState(false)
+
     return (
         <div className="header-block-wrapper flex flex-col w-full text-gen-grey">
             <div className="header flex w-full px-2 items-center justify-between">
-                <div className="header-logo flex h-7 w-32 items-center flex-row justify-between flex-nowrap">
+                <div className="header-logo flex h-7 w-32 items-center flex-row justify-between flex-nowrap hover:cursor-pointer">
                     <p className="font-bold text-xl uppercase">Product</p>
                     <p className="font-bold text-white bg-gen-grey w-7 rounded-md text-center">3D</p>
                 </div>
                 <div className="header-buttons flex-nowrap hidden px690:flex justify-between">
-                    <div className="header-button uppercase mx-3">Our work</div>
-                    <div className="header-button uppercase mx-3">Services and Prices</div>
-                    <div className="header-button uppercase mx-3">Contacts</div>
+                    <div className="header-button hover:cursor-pointer uppercase mx-3">Our work</div>
+                    <div className="header-button hover:cursor-pointer uppercase mx-3">Services and Prices</div>
+                    <div className="header-button hover:cursor-pointer uppercase mx-3">Contacts</div>
                 </div>
                 <div className="header-phone-number font-bold uppercase hidden px690:flex">
                     <p className="whitespace-nowrap">+38 (096) 346-65-43</p>
                 </div>
-                <div className="menu-icon flex px690:hidden">
+                <div className="menu-icon flex px690:hidden hover:cursor-pointer" onClick={() => {setMenuIsActive(true)}}>
                     <img className="" src={menuIcon} alt=""/>
                 </div>
-                <MenuBlock/>
+                <MenuBlock menuIsActive={menuIsActive} setMenuIsActive={setMenuIsActive}/>
             </div>
             <div className="header-content flex w-full h-full justify-between">
                 {/*<div className="header-image">*/}
