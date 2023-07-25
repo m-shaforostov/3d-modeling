@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr Black';
+    src: url("fonts/helveticaneuecyr_black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr Roman';
+    src: url("fonts/helveticaneuecyr_roman.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr Thin';
+    src: url("fonts/helveticaneuecyr_thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr UltraLight';
+    src: url("fonts/helveticaneuecyr_ultralight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr UltraLightItalic';
+    src: url("fonts/helveticaneuecyr_ultralightitalic.otf") format("opentype");
+}
+
 p {
     margin: 0;
 }
@@ -23,17 +48,30 @@ p {
 
 .header-image {}
 
-.header-text {}
 
-.header-main-text {}
+.header-bold-text {
+    font-family: "HelveticaNeueCyr Roman";
+    font-weight: 550;
+    line-height: 110%; /* 88px */
+    letter-spacing: 5.6px;
+}
 
-.header-additional-text {}
+.header-normal-text {
+    font-family: "HelveticaNeueCyr Thin";
+    font-style: italic;
+    font-weight: 300;
+    line-height: 110%;
+    letter-spacing: 4px;
+}
 
-ul {}
-
-li {}
-
-.header-try-button {}
+.header-try-button {
+    color: #FFF;
+    font-family: "HelveticaNeueCyr Roman";
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
 .button-shadow {}
 
