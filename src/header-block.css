@@ -46,8 +46,12 @@ p {
 
 .header-content {}
 
-.header-image {}
-
+.header-image {
+    background-image: url("images/net.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 
 .header-bold-text {
     font-family: "HelveticaNeueCyr Roman";
@@ -76,3 +80,4 @@ p {
 .button-shadow {}
 
 .button {}
+
