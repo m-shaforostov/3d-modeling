@@ -10,9 +10,9 @@ import lineImg from "./images/Line.png";
 function WeAreBlock() {
 
     return (
-        <div className="we-are__wrapper flex flex-nowrap px-3 mb-16">
-            <div className="we-are__left flex flex-col pr-3">
-                <div className="we-are__left-top-block flex flex-nowrap px690:mb-28 px600:mb-36 sm:mb-24 mb-16">
+        <div className="we-are__wrapper flex flex-nowrap px-3 mb-16 w-full">
+            <div className="we-are__left flex flex-col pr-3 px690:w-1/2 w-full">
+                <div className="we-are__left-top-block flex flex-nowrap lg:mb-28 px690:mb-1 px600:mb-32 sm:mb-16 mb-10">
                     <div className="we-are__reversed-text-wrapper uppercase flex h-fit lg:text-7xl px690:text-5xl px600:text-7xl sm:text-6xl text-5xl">
                         <p className="we-are__reversed-text title-bold-text ease-in-out duration-300h-fit whitespace-nowrap -rotate-90 lg:mt-28 lg:-mr-24 lg:-ml-28 px690:mt-20 px690:-mr-16 px690:-ml-20 px600:mt-28 px600:-mr-24 px600:-ml-28 sm:mt-24 sm:-mr-20 sm:-ml-24 mt-20 -mr-16 -ml-20">We are</p>
                     </div>
@@ -27,9 +27,9 @@ function WeAreBlock() {
                         </div>
                     </div>
                 </div>
-                <div className="we-are__images-block px690:hidden flex w-full mb-16 ">
-                    <img className="absolute w-vw80" src={teamPhoto} alt=""/>
-                    <img className="ml-24 mt-10 w-vw80" src={coordinates} alt=""/>
+                <div className="we-are__images-block px690:hidden flex relative justify-end w-full max-w-md mx-auto mb-16 ">
+                    <img className="absolute left-0 w-4/5" src={teamPhoto} alt=""/>
+                    <img className="ml-10 w-full" src={coordinates} alt=""/>
                 </div>
                 <div className="we-are__left-bottom-block flex flex-col mb-16 pl-3">
                     <div className="title-line flex flex-nowrap items-center mb-5">
@@ -54,10 +54,10 @@ function WeAreBlock() {
                     </div>
                 </div>
             </div>
-            <div className="we-are__right px690:flex hidden mb-16">
-                <div className="we-are__images-block h-full">
-                    {/*<img className="absolute w-2/5" src={teamPhoto} alt=""/>*/}
-                    <img className="ml-24 mt-10 w-96" src={coordinates} alt=""/>
+            <div className="we-are__right px690:flex hidden items-center mb-16 w-1/2">
+                <div className="we-are__images-block h-fit w-full flex justify-end relative">
+                    <img className="absolute lg:w-96 w-3/4 left-12 -top-4" src={teamPhoto} alt=""/>
+                    <img className="w-3/4" src={coordinates} alt=""/>
                 </div>
             </div>
         </div>

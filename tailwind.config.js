@@ -20,12 +20,13 @@ module.exports = {
         vw80: '75vw',
       },
       width: {
+        '300px': '300px',
         vw80: '75vw',
         px660: '660px',
         px768: '768px',
         px924: '924px',
         px1024: '1024px',
-      }
+      },
     },
   },
   plugins: [],
