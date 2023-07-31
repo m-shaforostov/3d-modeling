@@ -1,6 +1,6 @@
 import './header-block.css';
+import './App.css';
 import headerLogo from './images/3d.png'
-import headerNet from './images/net.png'
 import menuIcon from './images/menu.svg'
 import MenuBlock from "./menuBlock";
 import {useState} from "react";
@@ -36,9 +36,9 @@ function HeaderBlock() {
                 </div>
                 <div className="header-text flex flex-col items-end px690:mt-20 px600:-mt-24 sm:-mt-20 -mt-16 px690:ml-14">
                     <div className="header-main-text text-left uppercase lg:text-7xl px690:text-5xl px600:text-7xl sm:text-6xl text-5xl">
-                        <p className="header-bold-text ">modeling</p>
-                        <p className="header-normal-text">rendering</p>
-                        <p className="header-bold-text">animation</p>
+                        <p className="title-bold-text ">modeling</p>
+                        <p className="title-normal-text">rendering</p>
+                        <p className="title-bold-text">animation</p>
                     </div>
                     <div className="header-additional-text lg:mt-12 mt-6 lg:text-lg px600:text-base text-sm w-full flex flex-col px690:items-end items-start">
                         <div className="flex flex-nowrap items-center justify-end mb-4">
